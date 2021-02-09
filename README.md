@@ -2,7 +2,7 @@
     <h1>Workshop-Websites-with-HTML-CSS-and-JavaScript</h1>
 </div>
 
-### Tables of contens
+## Tables of contens
 
 1. [Food](https://github.com/Wissanukhong/Workshop-Websites-with-HTML-CSS-and-JavaScript/blob/master/1.Food/food.md)
 2. [Creative Design]()
@@ -15,4 +15,10 @@
 9. [Busuness Agency Website]()
 10. [Paypal Clone]()
 
-closure
+### General note
+
+เปลี่ยนแปลงหน่วยการแสดงผลให้เป็น rem โดยที่ 1rem จะมีค่าเท่ากับ 10px
+
+```html
+html { font-size: 62.5%; }
+```

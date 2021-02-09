@@ -1,0 +1,13 @@
+/* import font form google font */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&family=Monoton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; /* เอาตัวขีดเส้นตายออก */
+  list-style-type: none; /* เอา bullet ที่ list ออก */
+  outline: none; /* auto color hover button */
+  font-family: 'Bellata', cursive;
+  font-weight: 400;
+}
