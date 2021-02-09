@@ -1,43 +1,37 @@
-/* import font form google font */
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&family=Monoton&display=swap');
+# Creatvie Design
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none; /* เอาตัวขีดเส้นตายออก */
-  list-style-type: none; /* เอา bullet ที่ list ออก */
-  outline: none; /* auto color hover button */
-  font-family: 'Bellata', cursive;
-  font-weight: 400;
-}
+## nav-bar
 
-/* 1rem = 10px */
-html {
-  font-size: 62.5%;
-}
+### html
 
-body {
-  overflow-x: hidden;
-}
+```html
+<section class="section-1">
+  <nav class="navbar">
+    <a href="#" class="navbar-link">Design</a>
+    <a href="#" class="navbar-link">Customers</a>
+    <a href="#" class="navbar-link">Team</a>
+    <a href="#" class="navbar-link">Contact</a>
+  </nav>
+  <div class="floating-bg"></div>
+  <h1 class="section-1-heading">Creative Design</h1>
+  <div class="logo">
+    <i class="fas fa-bezier-curve"></i>
+  </div>
+</section>
+```
 
-/* section-1 */
-.section-1 {
-  width: 100%;
-  height: 100vh;
-  background: #fff;
-  position: relative;
-}
+### CSS
 
+```css
 .floating-bg {
   width: 150vw;
   height: 150vw;
   background-color: rgba(50, 231, 255, 0.8);
   position: absolute;
   top: -125vw; /* ตำแหน่งที่เราต้องการให้แสดง */
-  left: calc(50% - 75vw);
-  border-radius: 45%;
-  animation: rotate 30s infinite;
+  left: calc(50% - 75vw); // สูตรในการจัดกลางของตำแหน่ง absolute
+  border-radius: 45%; // ให้ขอบมน 45%
+  animation: rotate 30s infinite; // ให้เคลื่อนไหวทุกๆ 30 วินาที ไปตลอด
 }
 
 .floating-bg::before {
@@ -45,13 +39,14 @@ body {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: rgb(50, 231, 255, 0.5);
+  background-color: rgb(50, 231, 255, 0.8);
   top: 0;
   left: 0;
-  border-radius: 40%;
-  animation: rotate 30s infinite;
+  border-radius: 40%; /* ให้ขอบมน 45% */
+  animation: rotate 30s infinite; /* ให้เคลื่อนไหวทุกๆ 30 วินาที ไปตลอด */
 }
 
+/* Frames ที่เราต้องการให้มีการ Animation  */
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -67,7 +62,7 @@ body {
   z-index: 20;
   top: 4rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* จัดตำแหน่ง ในแนวนอนให้มีระยะห่างเท่ากัน */
 }
 
 .navbar-link {
@@ -86,3 +81,4 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 2.5s; /* กำหนดให้ทุกอย่างใน Element delay 0.5s */
 }
+```
