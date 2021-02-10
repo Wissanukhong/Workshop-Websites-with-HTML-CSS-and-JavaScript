@@ -38,7 +38,7 @@
   width: 150vw;
   height: 150vw;
   background-color: rgba(50, 231, 255, 0.8);
-  position: absolute;
+  position: absolute; /* ตำแหน่งที่อิสระ แต่จะอ้างอิงตำแหน่งจาก Element ก่อนหน้า */
   top: -125vw; /* ตำแหน่งที่เราต้องการให้แสดง */
   left: calc(50% - 75vw); /* สูตรในการจัดกลางของตำแหน่ง absolute */
   border-radius: 45%; /* ให้ขอบมน 45% */
@@ -46,7 +46,7 @@
 }
 
 .floating-bg::before {
-  position: absolute; /* ตำแหน่งที่อ้างอิงจาก element ก่อนหน้า */
+  position: absolute; /* ตำแหน่งที่อิสระ แต่จะอ้างอิงตำแหน่งจาก Element ก่อนหน้า */
   content: '';
   width: 100%;
   height: 100%;
@@ -69,7 +69,7 @@
 }
 
 .navbar {
-  position: relative; /* ตำแหน่งที่อยู่จริงๆ อ้างอิงจากก่อนหน้า */
+  position: relative; /* ตำแหน่งที่แท้จริง ที่แสดงต่อจาก Element ก่อนหน้า */
   z-index: 20;
   top: 4rem;
   display: flex;
@@ -99,7 +99,7 @@
 จะต้อง `transform: translateX(-เท่ากับจำนวน left);`
 
 ```css
-position: absolute; /* ตำแหน่งที่อยู่จริงๆ ของ Elemet */
+position: absolute; /* ตำแหน่งที่อิสระ แต่จะอ้างอิงตำแหน่งจาก Element ก่อนหน้า */
 top: 18vw;
 left: 50%;
 transform: translateX(-50%);
