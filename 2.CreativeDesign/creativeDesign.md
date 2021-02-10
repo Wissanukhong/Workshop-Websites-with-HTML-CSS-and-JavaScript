@@ -1,5 +1,16 @@
 # Creatvie Design
 
+- [Creatvie Design](#creatvie-design)
+  - [ขั้นตอนการลงมือทำ](#ขั้นตอนการลงมือทำ)
+  - [nav-bar](#nav-bar)
+    - [html](#html)
+    - [CSS](#css)
+    - [การจัดกลางของ Absolute](#การจัดกลางของ-absolute)
+
+## ขั้นตอนการลงมือทำ
+
+1. เริ่มจากการเขียน Navbar
+
 ## nav-bar
 
 ### html
@@ -29,13 +40,13 @@
   background-color: rgba(50, 231, 255, 0.8);
   position: absolute;
   top: -125vw; /* ตำแหน่งที่เราต้องการให้แสดง */
-  left: calc(50% - 75vw); // สูตรในการจัดกลางของตำแหน่ง absolute
-  border-radius: 45%; // ให้ขอบมน 45%
-  animation: rotate 30s infinite; // ให้เคลื่อนไหวทุกๆ 30 วินาที ไปตลอด
+  left: calc(50% - 75vw); /* สูตรในการจัดกลางของตำแหน่ง absolute */
+  border-radius: 45%; /* ให้ขอบมน 45% */
+  animation: rotate 30s infinite; /* ให้เคลื่อนไหวทุกๆ 30 วินาที ไปตลอด */
 }
 
 .floating-bg::before {
-  position: absolute;
+  position: absolute; /* ตำแหน่งที่อ้างอิงจาก element ก่อนหน้า */
   content: '';
   width: 100%;
   height: 100%;
@@ -58,7 +69,7 @@
 }
 
 .navbar {
-  position: relative;
+  position: relative; /* ตำแหน่งที่อยู่จริงๆ อ้างอิงจากก่อนหน้า */
   z-index: 20;
   top: 4rem;
   display: flex;
@@ -81,4 +92,15 @@
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 2.5s; /* กำหนดให้ทุกอย่างใน Element delay 0.5s */
 }
+```
+
+### การจัดกลางของ Absolute
+
+จะต้อง `transform: translateX(-เท่ากับจำนวน left);`
+
+```css
+position: absolute; /* ตำแหน่งที่อยู่จริงๆ ของ Elemet */
+top: 18vw;
+left: 50%;
+transform: translateX(-50%);
 ```
