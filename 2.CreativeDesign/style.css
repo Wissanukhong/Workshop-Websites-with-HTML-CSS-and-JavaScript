@@ -257,17 +257,13 @@ body {
   color: #505050;
 }
 
-.projects-btn {
+.project-btn {
   background-color: #fab34a;
   color: #fff;
   padding: 0.5rem 1.5rem;
   border-radius: 5rem;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
-}
-
-.story {
-  display: none;
 }
 
 .story-btn {
@@ -288,4 +284,25 @@ body {
   width: 100%;
   height: 0.1rem;
   background-color: #fff;
+}
+
+.story {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 69, 69, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.story-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2rem;
 }
