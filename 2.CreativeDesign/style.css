@@ -278,6 +278,13 @@ body {
   align-items: center;
   padding: 0.5rem;
   cursor: pointer;
+  z-index: 50;
+  transition: transform 0.5s;
+}
+
+/* When we click toggle */
+.story-btn.change {
+  transform: rotate(405deg);
 }
 
 .story-btn-line {
@@ -298,6 +305,16 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  transform: scale(0); /* scale(0) ให้มันหายไป*/
+  transform-origin: top right;
+  border-radius: 50rem 0 50rem 50rem;
+  transition: all 0.5s;
+}
+
+/* When we click toggle */
+.story.change {
+  transform: scale(1); /* scale(0) ให้มันแสดง*/
+  border-radius: 0;
 }
 
 .story-heading {
@@ -305,4 +322,12 @@ body {
   font-weight: 700;
   color: #fff;
   margin-bottom: 2rem;
+}
+
+.story-paragraph {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: justify;
+  letter-spacing: 0.1rem;
+  text-indent: 2rem;
 }
