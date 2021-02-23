@@ -28,3 +28,19 @@ html { font-size: 62.5%; }
   - absolute จะแสดงผลเป็น “อิสระ” คือจะให้มันไปอยู่ตรงไหนก็ได้ ซึ่งมันจะอยู่แค่ภายใต้ element ที่ครอบมันอีกทีเท่านั้น
   - fixed กำหนดจุดที่อยู่แบบตายตัว
   - static
+
+### Customize Color in VSCode
+
+```js
+
+    // Customize color vscode
+    "workbench.colorCustomizations": {
+        "editor.background": "#06090F",
+        "sideBar.background": "#06090F",
+        "activityBar.background": "#06090F",
+        "editorGutter.background": "#0D1117",
+        "minimap.background": "#0D1117"
+
+    },
+
+```
