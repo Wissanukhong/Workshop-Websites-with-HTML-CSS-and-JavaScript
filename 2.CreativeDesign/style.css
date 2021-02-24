@@ -15,6 +15,7 @@
 /* 1rem = 10px */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -439,5 +440,24 @@ html {
   color: #444;
   margin-top: 5rem;
 }
-
 /* End of section-4 */
+
+.scroll-up-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(50, 231, 255, 0.8);
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5ms;
+}
+
+.scroll-up-btn:hover {
+  background-color: rgba(50, 213, 255, 0.8);
+}
