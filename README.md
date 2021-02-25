@@ -17,6 +17,15 @@
 
 ### General note
 
+### Media Query size
+
+```css
+0-480px for generally phone
+480-768px for Tablet and ipad
+769-1024px for generally notebook
+1025-1200px for generally desktop
+```
+
 - เปลี่ยนแปลงหน่วยการแสดงผลให้เป็น rem โดยที่ 1rem จะมีค่าเท่ากับ 10px
 
 ```html
