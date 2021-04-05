@@ -462,8 +462,8 @@ html {
   background-color: rgba(50, 213, 255, 0.8);
 }
 
-/* Responssive */
-@media (max-width: 1400px) {
+/* Responssive 1025 - 1200px for generally desktop*/
+@media (max-width: 1200px) {
   /* section-1 */
   .floating-bg {
     top: -120vw;
@@ -537,5 +537,84 @@ html {
 
   .copyright {
     margin: 5rem 0 4rem;
+  }
+}
+
+/* Responsive 769-1024 for generally notebook */
+@media (max-width: 1024px) {
+  .floating-bg {
+    top: -110vw;
+  }
+
+  .section-1-heading {
+    font-size: 5rem;
+    top: 30vw;
+    width: 60rem;
+  }
+
+  .logo i {
+    font-size: 9rem;
+  }
+}
+
+/* responsive 480-768 for generally iPad */
+@media (max-width: 768px) {
+  .floating-bg {
+    top: -100vw;
+  }
+
+  .section-1-heading {
+    top: 40vw;
+  }
+
+  .nsvbar {
+    justify-content: space-around;
+  }
+}
+
+/* responsive 0-480px for generally phone */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .floating-bg {
+    top: -80vw;
+  }
+
+  .section-1-heading {
+    top: 38vw;
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+
+  .navbar-link {
+    font-size: 1.5rem;
+  }
+
+  .customer {
+    margin: 5rem 0;
+  }
+
+  .team-member {
+    margin: 5rem 0;
+  }
+
+  .section-4 {
+    height: auto;
+  }
+
+  .form-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .contact-form {
+    box-shadow: 1rem 1rem 2rem #aaa;
+  }
+  .contact-form:hover {
+    box-shadow: 2rem 2rem 2rem #aaa;
   }
 }
