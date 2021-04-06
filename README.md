@@ -53,3 +53,16 @@ html { font-size: 62.5%; }
     },
 
 ```
+
+### การจัดกลางของ position absolute
+
+```css
+.css class name {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+```
