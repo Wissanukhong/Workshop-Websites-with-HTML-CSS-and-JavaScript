@@ -329,6 +329,7 @@ html {
   top: 5rem;
   right: 15rem;
   box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .video {
@@ -342,6 +343,12 @@ html {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(calc(100% - 0.4rem));
+  transition: transform 0.4s;
+}
+
+.video-wrapper:hover .controls {
+  transform: translateY(0);
 }
 
 .video-bar-wrapper {
