@@ -27,3 +27,15 @@ const playPause = () => {
 btn.addEventListener('click', () => {
   playPause();
 });
+
+// video time update
+video.addEventListener('timeupdate', () => {
+  // console.log(video.currentTime, video.duration);
+  const barWidth = video.currentTime / video.duration;
+  bar.style.width = `${barWidth * 100}%`;
+
+  // Change the icon when the video end
+  if (video.ended) {
+    btn.className = 'far fa-play-circle';
+  }
+});
