@@ -78,6 +78,7 @@ html {
 
 .change .nav-list {
   opacity: 1;
+  visibility: visible;
   transition: all 0.7s 0.5s;
 }
 
