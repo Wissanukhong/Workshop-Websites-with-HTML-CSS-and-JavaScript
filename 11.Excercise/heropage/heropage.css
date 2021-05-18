@@ -18,12 +18,43 @@ html {
 /* section navbar */
 .navbar {
   width: 100%;
-  height: 4rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   padding: 2rem;
   z-index: 10;
+}
+
+.navbar.change {
+  height: 100vh;
+}
+
+.nav-lists {
+  display: none;
+}
+
+.change .nav-lists {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 1rem 0;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.change .nav-link:hover {
+  transform: scale(1.1);
+  color: red;
 }
 
 .logo {
@@ -94,6 +125,7 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .headder {
