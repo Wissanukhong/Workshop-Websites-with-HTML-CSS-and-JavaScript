@@ -433,9 +433,10 @@ html {
 }
 
 .pricing-card {
+  position: relative;
   margin-right: 2rem;
-  width: 23rem;
-  height: 45rem;
+  width: 25rem !important;
+  height: 45rem !important;
   background-color: #181b1d;
   border-radius: 1rem;
   box-shadow: 2rem 1rem 6rem rgba(0, 0, 0, 0.7);
