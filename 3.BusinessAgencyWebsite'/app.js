@@ -1,47 +1,47 @@
-// toggle the menu
-const menu = document.querySelector('.menu');
-const navbar = document.querySelector('.navbar');
+// Navbar
+const menu = document.querySelector(".menu");
+const navbar = document.querySelector(".navbar");
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('change');
-  navbar.classList.toggle('change');
+menu.addEventListener("click", () => {
+  navbar.classList.toggle("change");
+  menu.classList.toggle('change')
 });
+// End of Navbar
 
-// control the video
-const video = document.querySelector('.video');
-const btn = document.querySelector('.buttons i');
-const bar = document.querySelector('.video-bar');
+// Section 2 Video
+const video = document.querySelector('.video')
+const btn = document.querySelector('.buttons button i');
+const bar = document.querySelector('.video-bar')
 
-// function play and pause
 const playPause = () => {
-  if (video.paused) {
-    video.play();
-    btn.className = 'far fa-pause-circle';
+  if(video.paused) {
+    video.play()
+    btn.className = 'far fa-pause-circle'
+    video.style.opacity = '.7'
   } else {
-    video.pause();
-    btn.className = 'far fa-play-circle';
+    video.pause()
+    btn.className = 'far fa-play-circle'
+    video.style.opacity = '.3'
   }
-};
+}
 
-// call the function
 btn.addEventListener('click', () => {
-  playPause();
-});
+  playPause()
+})
 
-// video time update
+
 video.addEventListener('timeupdate', () => {
-  // console.log(video.currentTime, video.duration);
+  console.log(video.currentTime, video.duration)
   const barWidth = video.currentTime / video.duration;
-  bar.style.width = `${barWidth * 100}%`;
+  bar.style.width = `${barWidth * 100}%` 
+  if(video.ended) {
+    btn.className = 'far fa-play-circle'
+    video.style.opacity = '.3'
+  } 
+})
+// End of Section 2 Video
 
-  // Change the icon when the video end
-  if (video.ended) {
-    btn.className = 'far fa-play-circle';
-  }
-});
-
-// swiper
-let swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -52,5 +52,5 @@ let swiper = new Swiper('.swiper-container', {
     depth: 100,
     modifier: 1,
     slideShadows: true,
-  },
+  }
 });
